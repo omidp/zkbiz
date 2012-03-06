@@ -1,0 +1,20 @@
+Component Development
+How do use persian date picker into your zk application
+First set PersianZkDatePicker.jar in your project CLASSPATH ( copy it into lib folder )
+Then you can use it as follow
+<?page title="ZK Persian Date Picker"?>
+<window position="center,top" title="ZK Persian Date Picker!!" border="normal"
+width="750px" height="750px">
+<label value="You are using zk version : ${desktop.webApp.version}"/>
+<PersianDateBox id="pdt" />
+<button label="Click To Pick A Date">
+<attribute name="onClick">
+lblDate.setValue(pdt.getValue().toString());
+lblSolarDate.setValue(pdt.getValueAsSolar());
+</attribute>
+</button>
+<label id="lblDate" ></label>
+<label id="lblSolarDate"></label>
+</window>
+for more information about methods please visit java docs
+
