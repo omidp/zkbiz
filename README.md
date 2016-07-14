@@ -5,7 +5,7 @@ ZK 3/6.5/7 Persian Date Picker
 Contributors
 ===
 
-I'd like to thank [Shahab NasrollahZadeh Mehrabadi](shahab.mehrabadi@gmail.com) for his contribution on ZK 6.5/7
+I'd like to thank [Shahab NasrollahZadeh Mehrabadi](mailto:shahab.mehrabadi@gmail.com) for his contribution on ZK 6.5/7
 
 [Omid Pourhadi](http://omidbiz.com)
 
@@ -21,7 +21,12 @@ Usage
 <window position="center,top" title="ZK Persian Date Picker!!" border="normal"
 width="750px" height="750px">
 <label value="You are using zk version : ${desktop.webApp.version}"/>
-<PersianDateBox id="pdt" />
+<PersianDateBox id="pdt" >
+<attribute name="onChange">
+lblDate.setValue(pdt.getValue().toString());
+lblSolarDate.setValue(pdt.getValueAsSolar());
+</attribute>
+</PersianDateBox>
 <button label="Click To Pick A Date">
 <attribute name="onClick">
 lblDate.setValue(pdt.getValue().toString());
@@ -33,6 +38,10 @@ lblSolarDate.setValue(pdt.getValueAsSolar());
 </window>
 ```
 
+Note
+===
+
++ onChange attribute on PersianDatePicker only works with zk 3.6.3
 for more information about methods please visit java docs. source code also is available in jar files.
 
 
