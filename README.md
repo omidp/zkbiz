@@ -9,12 +9,10 @@ I'd like to thank [Shahab NasrollahZadeh Mehrabadi](mailto:shahab.mehrabadi@gmai
 
 [Omid Pourhadi](http://omidbiz.com)
 
-Usage
-===
 
-+ copy PersianZkDatePicker.jar (zk3)/ persiandatebox (zk6.5/7) in your project library (CLASSPATH)
+=== How to use
 
-+ Then use it
++ copy ZkPersianDatePicker.jar (zk3)/ persiandatebox (zk6.5/7) in your project library (CLASSPATH)
 
 ```
 <?page title="ZK Persian Date Picker"?>
