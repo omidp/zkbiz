@@ -34,3 +34,7 @@ mvn clean install -DskipTests=true -Dmaven.javadoc.skip=true
 
 - check pd for sample usecase 
 
+```
+http://localhost:8080/pd/hello.zul
+```
+
