@@ -1,0 +1,27 @@
+<window title="My First ZK Application" border="normal"
+	apply="pd.EditController">
+	Hello World!
+	<grid>
+		<rows>
+			<row>
+			<PersianDatebox id="createdPersianDatebox"
+				/>
+			</row>
+			<row>
+                updated Date (yyyy/MM/dd):
+                <PersianDatebox id="updatedPersianDatebox"
+				/>
+            </row>
+            <row>
+			<textbox id="textBox"
+				/>
+			</row>
+			<row>
+                original (yyyy/MM/dd):
+               <datebox id="createdDatebox" value="${win$composer.inventoryItem.createdDate}"
+                    format="yyyy/MM/dd" constraint="no empty" />
+            </row>
+		</rows>
+	</grid>
+	<button id="submitButton" label="Submit" />
+</window>

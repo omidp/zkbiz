@@ -1,0 +1,32 @@
+<language-addon>
+    <addon-name>PersianDatebox</addon-name>
+  	<version>
+		<version-class>com.omidbiz.zk.persiandatebox.Version</version-class>
+		<version-uid>9.5.0.1</version-uid>
+		<zk-version>9.5.0.1</zk-version><!-- or later -->
+	</version>
+    
+	<language-name>xul/html</language-name>
+	<component>
+		<component-name>PersianDatebox</component-name> <!-- required -->
+		<component-class>com.omidbiz.zk.persiandatebox.PersianDatebox</component-class> <!-- required -->
+		<widget-class>persiandatebox.PersianDatebox</widget-class> <!-- required -->
+		<mold>
+			<mold-name>default</mold-name>
+			<mold-uri>mold/persiandatebox.js</mold-uri>
+
+			<!--
+			== Tip in advance ==
+				You don't have to specify a css.dsp if you need not ,
+				but usually you need it.
+
+				You could assign a .css file ,too.
+
+				The css.dsp is almost as same as CSS file ,
+				but have more powerful enhancement.	(like EL support.)
+			====
+			-->
+			<css-uri>css/persiandatebox.css.dsp</css-uri>
+		</mold>
+	</component>
+</language-addon>

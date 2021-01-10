@@ -1,0 +1,6 @@
+<zk>
+	<window title="Hello World!!" border="normal" width="300px"
+		apply="test.ctrl.DemoWindowComposer">
+		<persiandatebox id="myComp" />
+	</window>
+</zk>
