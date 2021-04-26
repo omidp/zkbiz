@@ -8,7 +8,7 @@
 	<version>9.5.0.1</version>
 	<properties>
 		<zk.version>9.5.0.1</zk.version>
-		<commons-io>2.6</commons-io>
+		<commons-io>2.7</commons-io>
 		<maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
 		<packname>-${project.version}-FL-${maven.build.timestamp}</packname>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
